@@ -3,7 +3,7 @@ import FadeInSection from "@/components/FadeInSection";
 const categories = [
   {
     name: "Crystals & Gemstones",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5794.webp?v=1757200232&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5794.webp?v=1757200232&width=1946",
     url: "https://sacredrootshh.com/collections/all",
   },
   {
