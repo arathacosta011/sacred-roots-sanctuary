@@ -98,6 +98,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.8s ease-out forwards",
         "fade-in-slow": "fade-in-slow 1.2s ease-out forwards",
+        "orb-pulse": "orb-pulse 8s ease-in-out infinite",
       },
     },
   },

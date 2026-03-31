@@ -9,48 +9,48 @@ import Testimonials from "@/components/sections/Testimonials";
 import SectionGlow from "@/components/SectionGlow";
 
 const heroOrbs = [
-  { color: "#C4886A", size: 350, blur: 70, opacity: 0.11, position: "top-0 left-0" },
-  { color: "#7D9B7A", size: 300, blur: 60, opacity: 0.09, position: "bottom-0 right-0" },
+  { color: "#C4886A", size: 500, blur: 100, opacity: 0.18, position: "top-[-100px] left-[-100px]" },
+  { color: "#7D9B7A", size: 450, blur: 90, opacity: 0.15, position: "bottom-[-80px] right-[-80px]" },
 ];
 
 const aboutOrbs = [
-  { color: "#7D9B7A", size: 300, blur: 60, opacity: 0.09, position: "top-0 left-0" },
-  { color: "#C4886A", size: 350, blur: 70, opacity: 0.11, position: "bottom-0 right-0" },
+  { color: "#7D9B7A", size: 450, blur: 90, opacity: 0.15, position: "top-[-80px] left-[-80px]" },
+  { color: "#C4886A", size: 500, blur: 100, opacity: 0.18, position: "bottom-[-100px] right-[-100px]" },
 ];
 
 const emailOrbs = [
-  { color: "#D4A96A", size: 250, blur: 50, opacity: 0.09, position: "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" },
+  { color: "#D4A96A", size: 400, blur: 80, opacity: 0.15, position: "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" },
 ];
 
 const testimonialOrbs = [
-  { color: "#C4886A", size: 200, blur: 50, opacity: 0.06, position: "top-0 left-0" },
-  { color: "#7D9B7A", size: 200, blur: 50, opacity: 0.06, position: "bottom-0 right-0" },
+  { color: "#C4886A", size: 300, blur: 70, opacity: 0.1, position: "top-[-60px] left-[-60px]" },
+  { color: "#7D9B7A", size: 300, blur: 70, opacity: 0.1, position: "bottom-[-60px] right-[-60px]" },
 ];
 
 const Index = () => (
   <div>
-    <SectionGlow orbs={heroOrbs} className="overflow-hidden">
+    <SectionGlow orbs={heroOrbs}>
       <HeroSection />
     </SectionGlow>
-    <SectionGlow orbs={[]} className="overflow-hidden">
+    <SectionGlow orbs={[]}>
       <TrustBar />
     </SectionGlow>
-    <SectionGlow orbs={aboutOrbs} className="overflow-hidden">
+    <SectionGlow orbs={aboutOrbs}>
       <FeaturedProducts />
     </SectionGlow>
-    <SectionGlow orbs={aboutOrbs} className="overflow-hidden">
+    <SectionGlow orbs={aboutOrbs}>
       <BrandPhilosophy />
     </SectionGlow>
-    <SectionGlow orbs={[]} className="overflow-hidden">
+    <SectionGlow orbs={[]}>
       <Categories />
     </SectionGlow>
-    <SectionGlow orbs={testimonialOrbs} className="overflow-hidden">
+    <SectionGlow orbs={testimonialOrbs}>
       <Testimonials />
     </SectionGlow>
-    <SectionGlow orbs={[]} className="overflow-hidden">
+    <SectionGlow orbs={[]}>
       <FounderReels />
     </SectionGlow>
-    <SectionGlow orbs={emailOrbs} className="overflow-hidden">
+    <SectionGlow orbs={emailOrbs}>
       <EmailSignup />
     </SectionGlow>
   </div>
