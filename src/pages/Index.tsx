@@ -102,7 +102,7 @@ const Index = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {featuredProducts.map((p) => (
-            <div key={p.name} className="product-card">
+            <div key={p.name} className="product-card group">
               <div className="product-card-image aspect-square mb-4">
                 <img src={p.image} alt={p.name} className="w-full h-full object-cover" loading="lazy" width={800} height={800} />
               </div>
