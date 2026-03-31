@@ -5,28 +5,28 @@ const products = [
     name: "Quartz Face Roller",
     price: "$24",
     tag: "Bestseller",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5769.webp?v=1757188727&width=800",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5769.webp?v=1757188727&width=1200",
     url: "https://sacredrootshh.com/products/quartz-face-roller",
   },
   {
     name: "Crystal Bracelet",
     price: "$10",
     tag: "New",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5790.webp?v=1757199570&width=800",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5782.webp?v=1757200202&width=1200",
     url: "https://sacredrootshh.com/products/crystal-bracelet",
   },
   {
     name: "Smudge Kit",
     price: "$28",
     tag: "Ritual",
-    image: "https://sacredrootshh.com/cdn/shop/files/white-sage-palo-santo-with-crystal-set-671027_2400x_3cbd7046-72b0-4c7e-be7f-936681fbf242.webp?v=1757178026&width=800",
+    image: "https://sacredrootshh.com/cdn/shop/files/white-sage-palo-santo-with-crystal-set-671027_2400x_3cbd7046-72b0-4c7e-be7f-936681fbf242.webp?v=1757178026&width=1200",
     url: "https://sacredrootshh.com/products/palo-santo",
   },
   {
     name: "Selenite Lamp",
     price: "$95",
     tag: "Premium",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=800",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=1200",
     url: "https://sacredrootshh.com/products/salentine-lamp",
   },
 ];
@@ -57,7 +57,7 @@ const FeaturedProducts = () => (
           className="product-card group block"
         >
           <div className="product-card-image aspect-[4/5] mb-5 rounded-sm overflow-hidden relative bg-muted">
-            <img src={p.image} alt={p.name} className="w-full h-full object-cover" loading="lazy" width={800} height={1000} />
+            <img src={p.image} alt={p.name} className="w-full h-full object-cover" loading="lazy" width={1200} height={1500} />
             <span className="absolute top-4 left-4 eyebrow text-[9px] bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full">
               {p.tag}
             </span>

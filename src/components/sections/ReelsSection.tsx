@@ -7,25 +7,25 @@ const reels = [
   {
     title: "Crystal Cleansing Ritual",
     desc: "How to cleanse and charge your crystals",
-    image: "https://sacredrootshh.com/cdn/shop/files/white-sage-palo-santo-with-crystal-set-671027_2400x_3cbd7046-72b0-4c7e-be7f-936681fbf242.webp?v=1757178026&width=800",
+    image: "https://sacredrootshh.com/cdn/shop/files/white-sage-palo-santo-with-crystal-set-671027_2400x_3cbd7046-72b0-4c7e-be7f-936681fbf242.webp?v=1757178026&width=1200",
     url: INSTAGRAM_URL + "reels/",
   },
   {
     title: "Bracelet Stacking Guide",
     desc: "Our favourite crystal bracelet combos",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5794.webp?v=1757200232&width=800",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5794.webp?v=1757200232&width=1200",
     url: INSTAGRAM_URL + "reels/",
   },
   {
     title: "Palo Santo Ritual",
     desc: "How to smudge your space with palo santo",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5746.jpg?v=1757176829&width=800",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5746.jpg?v=1757176829&width=1200",
     url: INSTAGRAM_URL + "reels/",
   },
   {
     title: "Selenite Energy Guide",
     desc: "The healing power of selenite",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=800",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=1200",
     url: INSTAGRAM_URL + "reels/",
   },
 ];
@@ -62,8 +62,8 @@ const ReelsSection = () => (
               alt={reel.title}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               loading="lazy"
-              width={800}
-              height={1000}
+              width={1200}
+              height={1500}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-foreground/10 to-transparent" />
 
