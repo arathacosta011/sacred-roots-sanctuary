@@ -5,7 +5,7 @@ import BrandPhilosophy from "@/components/sections/BrandPhilosophy";
 import Categories from "@/components/sections/Categories";
 
 import FounderReels from "@/components/sections/FounderReels";
-import InstagramSection from "@/components/sections/InstagramSection";
+
 import EmailSignup from "@/components/sections/EmailSignup";
 import Testimonials from "@/components/sections/Testimonials";
 
