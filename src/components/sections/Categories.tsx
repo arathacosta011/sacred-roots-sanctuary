@@ -3,17 +3,17 @@ import FadeInSection from "@/components/FadeInSection";
 const categories = [
   {
     name: "Crystals & Gemstones",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5794.webp?v=1757200232&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5794.webp?v=1757200232&width=1946",
     url: "https://sacredrootshh.com/collections/all",
   },
   {
     name: "Body & Ritual",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=1946",
     url: "https://sacredrootshh.com/collections/all",
   },
   {
     name: "Home & Sacred Space",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=1946",
     url: "https://sacredrootshh.com/collections/all",
   },
 ];

@@ -4,12 +4,12 @@ import FadeInSection from "@/components/FadeInSection";
 const INSTAGRAM_URL = "https://www.instagram.com/sacredroots.hh/";
 
 const images = [
-  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5744.jpg?v=1757176557&width=800", alt: "Abalone Shell" },
-  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5790.webp?v=1757199570&width=800", alt: "Crystal Bracelets" },
-  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5797.webp?v=1757200231&width=800", alt: "Bracelet variants" },
-  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5769.webp?v=1757188727&width=800", alt: "Quartz Face Roller" },
-  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=800", alt: "Selenite Lamp" },
-  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5748.webp?v=1757177405&width=800", alt: "White Sage" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5744.jpg?v=1757176557&width=1946", alt: "Abalone Shell" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5790.webp?v=1757199570&width=1946", alt: "Crystal Bracelets" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5797.webp?v=1757200231&width=1946", alt: "Bracelet variants" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5769.webp?v=1757188727&width=1946", alt: "Quartz Face Roller" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=1946", alt: "Selenite Lamp" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5743.webp?v=1757176366&width=1946", alt: "Crystal Water Bottle" },
 ];
 
 const InstagramSection = () => (
