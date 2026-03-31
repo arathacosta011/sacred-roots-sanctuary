@@ -18,7 +18,7 @@ const Index = () => (
     <Categories />
     <Testimonials />
     <FounderReels />
-    <ReelsSection />
+    
     <InstagramSection />
     <EmailSignup />
   </div>
