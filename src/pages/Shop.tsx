@@ -46,7 +46,7 @@ const allProducts = [
     name: "Goddess Body (Opalite)",
     price: "$45",
     desc: "Opalite goddess body carving, self-standing.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=1946",
     url: "https://sacredrootshh.com/products/opal-body",
     category: "Crystals",
   },
