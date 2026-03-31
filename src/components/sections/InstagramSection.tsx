@@ -4,12 +4,12 @@ import FadeInSection from "@/components/FadeInSection";
 const INSTAGRAM_URL = "https://www.instagram.com/sacredroots.hh/";
 
 const images = [
-  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5744.jpg?v=1757176557&width=640", alt: "Abalone Shell" },
-  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5790.webp?v=1757199570&width=640", alt: "Crystal Bracelets" },
-  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=640", alt: "Goddess Body Opalite" },
-  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5769.webp?v=1757188727&width=640", alt: "Quartz Face Roller" },
-  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5748.webp?v=1757177405&width=640", alt: "White Sage" },
-  { src: "https://sacredrootshh.com/cdn/shop/files/FullSizeRender.jpg?v=1757187507&width=640", alt: "Mushroom Crystal Pendant" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5744.jpg?v=1757176557&width=800", alt: "Abalone Shell" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5790.webp?v=1757199570&width=800", alt: "Crystal Bracelets" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5797.webp?v=1757200231&width=800", alt: "Bracelet variants" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5769.webp?v=1757188727&width=800", alt: "Quartz Face Roller" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=800", alt: "Selenite Lamp" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5748.webp?v=1757177405&width=800", alt: "White Sage" },
 ];
 
 const InstagramSection = () => (
@@ -41,8 +41,8 @@ const InstagramSection = () => (
             alt={img.alt}
             className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
             loading="lazy"
-            width={640}
-            height={640}
+            width={800}
+            height={800}
           />
           <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-all duration-500 flex items-center justify-center">
             <Instagram size={20} className="text-background opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
