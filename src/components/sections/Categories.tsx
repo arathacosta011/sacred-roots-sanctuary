@@ -11,11 +11,6 @@ const categories = [
     url: "https://sacredrootshh.com/collections/all",
   },
   {
-    name: "Face Tallow",
-    image: faceTallowImg,
-    url: "https://sacredrootshh.com/collections/all",
-  },
-  {
     name: "Mushroom Nootropics",
     image: mushroomImg,
     url: "https://sacredrootshh.com/collections/all",
