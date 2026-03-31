@@ -8,7 +8,7 @@ const categories = [
   },
   {
     name: "Body & Ritual",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=1946",
     url: "https://sacredrootshh.com/collections/all",
   },
   {
