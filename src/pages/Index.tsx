@@ -4,6 +4,7 @@ import FeaturedProducts from "@/components/sections/FeaturedProducts";
 import BrandPhilosophy from "@/components/sections/BrandPhilosophy";
 import Categories from "@/components/sections/Categories";
 import ReelsSection from "@/components/sections/ReelsSection";
+import FounderReels from "@/components/sections/FounderReels";
 import InstagramSection from "@/components/sections/InstagramSection";
 import EmailSignup from "@/components/sections/EmailSignup";
 import Testimonials from "@/components/sections/Testimonials";
@@ -16,6 +17,7 @@ const Index = () => (
     <BrandPhilosophy />
     <Categories />
     <Testimonials />
+    <FounderReels />
     <ReelsSection />
     <InstagramSection />
     <EmailSignup />
