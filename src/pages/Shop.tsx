@@ -6,7 +6,7 @@ const allProducts = [
     name: "Quartz Face Roller",
     price: "$24",
     desc: "Smooth away tension with natural rose quartz.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5769.webp?v=1757188727&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5769.webp?v=1757188727&width=1946",
     url: "https://sacredrootshh.com/products/quartz-face-roller",
     category: "Body & Skincare",
   },
