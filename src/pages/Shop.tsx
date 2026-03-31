@@ -22,7 +22,7 @@ const allProducts = [
     name: "Mushroom Crystal Pendant",
     price: "$8",
     desc: "Polished crystal mushroom pendant necklace.",
-    image: "https://sacredrootshh.com/cdn/shop/files/FullSizeRender.jpg?v=1757187507&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/FullSizeRender.jpg?v=1757187507&width=1946",
     url: "https://sacredrootshh.com/products/mushroom-natural-crystal-polishing-pendant-necklace-1-piece",
     category: "Crystals",
   },
