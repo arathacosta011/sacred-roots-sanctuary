@@ -26,7 +26,7 @@ const products = [
     name: "Selenite Lamp",
     price: "$95",
     tag: "Premium",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=1946",
     url: "https://sacredrootshh.com/products/salentine-lamp",
   },
 ];

@@ -86,7 +86,7 @@ const allProducts = [
     name: "Bamboo Bathroom Set",
     price: "$11",
     desc: "Eco-friendly bamboo accessories for your space.",
-    image: "https://sacredrootshh.com/cdn/shop/files/C39F7D2E-7788-4FD7-87B9-450567DD2832.jpg?v=1757098385&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/C39F7D2E-7788-4FD7-87B9-450567DD2832.jpg?v=1757098385&width=1946",
     url: "https://sacredrootshh.com/products/bamboo-bathroom-accessories",
     category: "Home",
   },
