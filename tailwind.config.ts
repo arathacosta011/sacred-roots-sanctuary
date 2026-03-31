@@ -88,6 +88,10 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        "orb-pulse": {
+          "0%, 100%": { transform: "scale(1)", opacity: "var(--tw-opacity, 1)" },
+          "50%": { transform: "scale(1.15)", opacity: "calc(var(--tw-opacity, 1) * 0.7)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
