@@ -143,7 +143,7 @@ const Index = () => {
       <FadeInSection className="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {categories.map((cat) => (
-            <Link to="/shop" key={cat.name} className="category-card h-[300px] md:h-[400px] rounded-sm">
+            <Link to="/shop" key={cat.name} className="category-card group h-[300px] md:h-[400px] rounded-sm">
               <img src={cat.image} alt={cat.name} className="w-full h-full object-cover" loading="lazy" width={800} height={640} />
               <span className="absolute bottom-6 left-6 z-10 font-heading text-xl md:text-2xl text-primary-foreground">
                 {cat.name}
