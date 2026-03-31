@@ -62,7 +62,7 @@ const allProducts = [
     name: "Palo Santo",
     price: "$5",
     desc: "Sustainably sourced palo santo cleansing sticks.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5746.jpg?v=1757176829&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5746.jpg?v=1757176829&width=1946",
     url: "https://sacredrootshh.com/products/palo-santo-1",
     category: "Ritual Tools",
   },
