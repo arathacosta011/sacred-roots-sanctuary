@@ -6,47 +6,47 @@
 
 @layer base {
   :root {
-    --background: 39 40% 97%;
-    --foreground: 40 5% 12%;
+    --background: 40 33% 98%;
+    --foreground: 30 8% 18%;
 
-    --card: 39 40% 97%;
-    --card-foreground: 40 5% 12%;
+    --card: 40 33% 98%;
+    --card-foreground: 30 8% 18%;
 
-    --popover: 39 40% 97%;
-    --popover-foreground: 40 5% 12%;
+    --popover: 40 33% 98%;
+    --popover-foreground: 30 8% 18%;
 
-    --primary: 143 16% 48%;
-    --primary-foreground: 39 40% 97%;
+    --primary: 150 12% 42%;
+    --primary-foreground: 40 33% 98%;
 
-    --secondary: 20 35% 55%;
-    --secondary-foreground: 39 40% 97%;
+    --secondary: 25 28% 52%;
+    --secondary-foreground: 40 33% 98%;
 
-    --muted: 35 30% 93%;
-    --muted-foreground: 30 10% 46%;
+    --muted: 38 25% 95%;
+    --muted-foreground: 30 8% 46%;
 
-    --accent: 35 45% 60%;
-    --accent-foreground: 40 5% 12%;
+    --accent: 38 30% 55%;
+    --accent-foreground: 30 8% 18%;
 
-    --ocean: 195 30% 62%;
-    --ocean-foreground: 39 40% 97%;
+    --ocean: 195 22% 58%;
+    --ocean-foreground: 40 33% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 33 22% 89%;
-    --input: 33 22% 89%;
-    --ring: 143 16% 48%;
+    --border: 36 18% 91%;
+    --input: 36 18% 91%;
+    --ring: 150 12% 42%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 39 40% 95%;
-    --sidebar-foreground: 40 5% 12%;
-    --sidebar-primary: 143 16% 48%;
-    --sidebar-primary-foreground: 39 40% 97%;
-    --sidebar-accent: 33 22% 89%;
-    --sidebar-accent-foreground: 40 5% 12%;
-    --sidebar-border: 33 22% 89%;
-    --sidebar-ring: 143 16% 48%;
+    --sidebar-background: 40 33% 96%;
+    --sidebar-foreground: 30 8% 18%;
+    --sidebar-primary: 150 12% 42%;
+    --sidebar-primary-foreground: 40 33% 98%;
+    --sidebar-accent: 36 18% 91%;
+    --sidebar-accent-foreground: 30 8% 18%;
+    --sidebar-border: 36 18% 91%;
+    --sidebar-ring: 150 12% 42%;
 
     --font-heading: 'Cormorant Garamond', serif;
     --font-body: 'DM Sans', sans-serif;
@@ -128,7 +128,7 @@
   }
 
   .btn-primary {
-    @apply bg-primary text-primary-foreground px-7 py-3 text-[13px] tracking-[0.05em] transition-all duration-500 hover:opacity-90;
+    @apply bg-foreground text-background px-7 py-3 text-[13px] tracking-[0.05em] transition-all duration-500 hover:opacity-80;
     font-family: var(--font-body);
     border-radius: 9999px;
     font-weight: 400;

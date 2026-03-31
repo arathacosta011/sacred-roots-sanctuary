@@ -7,18 +7,20 @@ const testimonials = [
 ];
 
 const Testimonials = () => (
-  <FadeInSection className="max-w-7xl mx-auto px-6 lg:px-12 py-24 md:py-32">
-    <p className="eyebrow text-center mb-4">What Our Community Says</p>
-    <h2 className="heading-section text-center mb-16">Real Stories, Real Energy</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-      {testimonials.map((t, i) => (
-        <div key={i} className="text-center">
-          <span className="font-heading text-6xl text-primary/40 leading-none block mb-2">"</span>
-          <p className="body-text italic mb-6 text-foreground/80">{t.quote}</p>
-          <p className="text-sm font-medium text-foreground">— {t.author}</p>
-          <p className="text-[11px] text-muted-foreground/60 mt-1">{t.detail}</p>
-        </div>
-      ))}
+  <FadeInSection className="border-t border-border/40">
+    <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 md:py-32">
+      <p className="eyebrow text-center mb-4">What Our Community Says</p>
+      <h2 className="heading-section text-center mb-16">Real Stories, Real Energy</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        {testimonials.map((t, i) => (
+          <div key={i} className="text-center">
+            <span className="font-heading text-6xl text-primary/30 leading-none block mb-2">"</span>
+            <p className="body-text italic mb-6 text-foreground/80">{t.quote}</p>
+            <p className="text-sm font-medium text-foreground">— {t.author}</p>
+            <p className="text-[11px] text-muted-foreground/60 mt-1">{t.detail}</p>
+          </div>
+        ))}
+      </div>
     </div>
   </FadeInSection>
 );

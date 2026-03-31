@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border/60"
+          ? "bg-background/95 backdrop-blur-md border-b border-border/50"
           : "bg-transparent"
       }`}
     >
@@ -59,9 +59,14 @@ const Navbar = () => {
           >
             <Instagram size={18} />
           </a>
-          <Link to="/shop" className="btn-primary text-[12px] px-6 py-2.5">
+          <a
+            href="https://sacredrootshh.com/collections/all"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary text-[12px] px-6 py-2.5"
+          >
             Shop Now
-          </Link>
+          </a>
         </div>
 
         <button
@@ -86,9 +91,14 @@ const Navbar = () => {
               </Link>
             ))}
             <div className="flex items-center gap-4 mt-6">
-              <Link to="/shop" className="btn-primary">
+              <a
+                href="https://sacredrootshh.com/collections/all"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
                 Shop Now
-              </Link>
+              </a>
               <a
                 href="https://www.instagram.com/sacredroots.hh/"
                 target="_blank"
