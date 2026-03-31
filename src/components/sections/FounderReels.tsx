@@ -1,87 +1,58 @@
-import { Play, Instagram } from "lucide-react";
+import { useEffect } from "react";
+import { Instagram } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
 
-const reels = [
-  {
-    id: "DTivbfzEoQK",
-    title: "Behind the Brand",
-    desc: "A glimpse into the Sacred Roots journey",
-    thumbnail: "https://sacredrootshh.com/cdn/shop/files/holistic-wellness.png?v=1756926464&width=800",
-  },
-  {
-    id: "DTV-lFxkvnG",
-    title: "Daily Rituals",
-    desc: "How we bring intention into every day",
-    thumbnail: "https://sacredrootshh.com/cdn/shop/files/IMG-5744.jpg?v=1757176557&width=800",
-  },
-  {
-    id: "DQzrGPjEjOW",
-    title: "Sacred Roots Story",
-    desc: "The heart behind what we do",
-    thumbnail: "https://sacredrootshh.com/cdn/shop/files/IMG-5746.jpg?v=1757176829&width=800",
-  },
+const reelUrls = [
+  "https://www.instagram.com/reel/DTivbfzEoQK/",
+  "https://www.instagram.com/reel/DTV-lFxkvnG/",
+  "https://www.instagram.com/reel/DQzrGPjEjOW/",
 ];
 
-const ReelCard = ({ reel }: { reel: (typeof reels)[0] }) => (
-  <a
-    href={`https://www.instagram.com/reel/${reel.id}/`}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="group relative aspect-[9/16] overflow-hidden rounded-sm bg-muted block"
-  >
-    <img
-      src={reel.thumbnail}
-      alt={reel.title}
-      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-      loading="lazy"
-    />
+const FounderReels = () => {
+  useEffect(() => {
+    const s = document.createElement("script");
+    s.src = "https://www.instagram.com/embed.js";
+    s.async = true;
+    document.body.appendChild(s);
+    return () => {
+      document.body.removeChild(s);
+    };
+  }, []);
 
-    <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-foreground/10 to-transparent z-[5]" />
-
-    <div className="absolute inset-0 flex items-center justify-center z-[6]">
-      <div className="w-14 h-14 rounded-full bg-background/30 backdrop-blur-sm flex items-center justify-center opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
-        <Play size={20} className="text-background ml-0.5" fill="currentColor" />
-      </div>
-    </div>
-
-    <div className="absolute bottom-0 left-0 right-0 p-5 z-[6]">
-      <div className="flex items-center gap-1.5 mb-2">
-        <Instagram size={12} className="text-background/70" />
-        <span className="text-[10px] uppercase tracking-wider text-background/60">Watch on Instagram</span>
-      </div>
-      <p className="text-[13px] font-medium text-background/90 mb-1">{reel.title}</p>
-      <p className="text-[11px] text-background/60">{reel.desc}</p>
-    </div>
-  </a>
-);
-
-const FounderReels = () => (
-  <FadeInSection className="py-20 md:py-28">
-    <div className="max-w-7xl mx-auto px-6 lg:px-12">
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14">
-        <div>
-          <p className="eyebrow mb-4">Meet the Founder</p>
-          <h2 className="heading-section">
-            The Heart Behind<br className="hidden md:block" /> Sacred Roots
-          </h2>
+  return (
+    <FadeInSection className="py-20 md:py-28">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14">
+          <div>
+            <p className="eyebrow mb-4">Meet the Founder</p>
+            <h2 className="heading-section">
+              The Heart Behind<br className="hidden md:block" /> Sacred Roots
+            </h2>
+          </div>
+          <a
+            href="https://www.instagram.com/sacredroots.hh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary mt-4 md:mt-0"
+          >
+            <Instagram size={14} /> Follow Along
+          </a>
         </div>
-        <a
-          href="https://www.instagram.com/sacredroots.hh/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-secondary mt-4 md:mt-0"
-        >
-          <Instagram size={14} /> Follow Along
-        </a>
-      </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        {reels.map((reel) => (
-          <ReelCard key={reel.id} reel={reel} />
-        ))}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {reelUrls.map((url) => (
+            <blockquote
+              key={url}
+              className="instagram-media"
+              data-instgrm-permalink={url}
+              data-instgrm-version="14"
+              style={{ width: "100%", maxWidth: 420, margin: 0, minHeight: 480 }}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  </FadeInSection>
-);
+    </FadeInSection>
+  );
+};
 
 export default FounderReels;
