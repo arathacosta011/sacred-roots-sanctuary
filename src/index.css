@@ -152,7 +152,7 @@
   }
 
   .category-card {
-    @apply relative overflow-hidden group cursor-pointer;
+    @apply relative overflow-hidden cursor-pointer;
   }
 
   .category-card::after {
