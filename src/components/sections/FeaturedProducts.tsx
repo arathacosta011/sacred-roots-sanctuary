@@ -12,7 +12,7 @@ const products = [
     name: "Crystal Bracelet",
     price: "$10",
     tag: "New",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5782.webp?v=1757200202&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5790.webp?v=1757199570&width=1946",
     url: "https://sacredrootshh.com/products/crystal-bracelet",
   },
   {
