@@ -41,7 +41,7 @@ const allProducts = [
   },
 ];
 
-const filters = ["All", "Beef Tallow", "Face Tallow", "Mushroom Nootropics", "Soaps"];
+const filters = ["All", "Beef Tallow", "Mushroom Nootropics", "Soaps"];
 
 const Shop = () => {
   const [activeFilter, setActiveFilter] = useState("All");

@@ -13,13 +13,6 @@ const products = [
     url: "https://sacredrootshh.com/collections/all",
   },
   {
-    name: "Face Tallow",
-    price: "$28",
-    tag: "Skincare",
-    image: faceTallowImg,
-    url: "https://sacredrootshh.com/collections/all",
-  },
-  {
     name: "Sacred Mycelium",
     price: "$45",
     tag: "Nootropic",
