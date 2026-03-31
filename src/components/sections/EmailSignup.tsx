@@ -6,7 +6,7 @@ const EmailSignup = () => {
 
   return (
     <FadeInSection>
-      <section className="bg-muted/50">
+      <section className="bg-muted/40">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="eyebrow mb-4">Stay Connected</p>

@@ -19,10 +19,10 @@ const images = [
 const INSTAGRAM_URL = "https://www.instagram.com/sacredroots.hh/";
 
 const InstagramSection = () => (
-  <FadeInSection className="py-20 md:py-32">
+  <FadeInSection className="py-20 md:py-28 border-t border-border/40">
     <div className="text-center mb-12">
       <p className="eyebrow mb-4">Follow the Journey</p>
-      <h2 className="heading-section mb-4">See More on Instagram</h2>
+      <h2 className="heading-section mb-4">@sacredroots.hh</h2>
       <a
         href={INSTAGRAM_URL}
         target="_blank"
@@ -30,7 +30,7 @@ const InstagramSection = () => (
         className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
       >
         <Instagram size={16} />
-        @sacredroots.hh
+        Follow on Instagram
       </a>
     </div>
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1 max-w-7xl mx-auto px-6 lg:px-12">
@@ -51,7 +51,7 @@ const InstagramSection = () => (
             height={640}
           />
           <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-all duration-500 flex items-center justify-center">
-            <Instagram size={20} className="text-primary-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <Instagram size={20} className="text-background opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
         </a>
       ))}

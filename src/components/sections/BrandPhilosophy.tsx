@@ -10,7 +10,7 @@ const BrandPhilosophy = () => (
         <div className="relative">
           <img
             src={lifestyleFounder}
-            alt="Founder walking barefoot on La Jolla beach holding crystals at golden hour"
+            alt="Founder with crystals at golden hour on the La Jolla coastline"
             className="w-full h-[500px] md:h-[650px] object-cover rounded-sm"
             loading="lazy"
             width={960}

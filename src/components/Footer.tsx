@@ -6,10 +6,9 @@ const Footer = () => {
   const [email, setEmail] = useState("");
 
   return (
-    <footer className="border-t border-border/60">
+    <footer className="border-t border-border/50">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-          {/* Brand */}
           <div className="md:col-span-4">
             <p className="font-heading text-2xl italic text-foreground">Sacred Roots</p>
             <p className="body-text mt-3 text-sm max-w-xs">
@@ -28,7 +27,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Links */}
           <div className="md:col-span-2">
             <p className="eyebrow mb-5">Navigate</p>
             <div className="flex flex-col gap-3">
@@ -49,25 +47,15 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Connect */}
           <div className="md:col-span-2">
-            <p className="eyebrow mb-5">Connect</p>
+            <p className="eyebrow mb-5">Shop</p>
             <div className="flex flex-col gap-3">
-              <a
-                href="https://www.instagram.com/sacredroots.hh/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
-              >
-                Instagram
-              </a>
-              <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300">
-                Get in Touch
-              </Link>
+              <a href="https://sacredrootshh.com/collections/all" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300">All Products</a>
+              <a href="https://www.instagram.com/sacredroots.hh/" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300">Instagram</a>
+              <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300">Get in Touch</Link>
             </div>
           </div>
 
-          {/* Newsletter */}
           <div className="md:col-span-4">
             <p className="eyebrow mb-5">Join the Community</p>
             <p className="text-sm text-muted-foreground mb-4">10% off your first order + a free crystal healing guide.</p>
@@ -86,7 +74,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-border/40 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground/60">
             © 2025 Sacred Roots Holistic Healing · La Jolla, CA

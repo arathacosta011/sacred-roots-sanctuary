@@ -4,16 +4,15 @@ import heroImage from "@/assets/hero-coastal.jpg";
 
 const HeroSection = () => (
   <section className="min-h-screen flex items-center relative overflow-hidden">
-    {/* Background image */}
     <div className="absolute inset-0">
       <img
         src={heroImage}
-        alt="Rose quartz crystals and white sage on sun-bleached driftwood"
+        alt="Sacred Roots wellness flatlay with rose quartz, palo santo, lavender and sage"
         className="w-full h-full object-cover"
         width={1920}
         height={1280}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/30" />
     </div>
 
     <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 pt-20">
@@ -28,9 +27,9 @@ const HeroSection = () => (
           Ethically sourced crystals, ritual tools, and wellness products — curated for your healing journey.
         </p>
         <div className="flex items-center gap-5 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-          <Link to="/shop" className="btn-primary">
+          <a href="https://sacredrootshh.com/collections/all" target="_blank" rel="noopener noreferrer" className="btn-primary">
             Shop the Collection
-          </Link>
+          </a>
           <Link to="/our-story" className="btn-secondary">
             Our Story <ArrowRight size={14} />
           </Link>

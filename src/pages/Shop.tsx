@@ -1,23 +1,71 @@
 import { useState } from "react";
 import FadeInSection from "@/components/FadeInSection";
-import productRoller from "@/assets/product-roller-premium.jpg";
-import productBracelet from "@/assets/product-bracelet-premium.jpg";
-import productPendant from "@/assets/product-pendant-premium.jpg";
-import productBottle from "@/assets/product-bottle-premium.jpg";
-import productOil from "@/assets/product-oil-premium.jpg";
-import productPalo from "@/assets/product-palo-premium.jpg";
-import productShell from "@/assets/product-shell-premium.jpg";
-import productBamboo from "@/assets/product-bamboo-premium.jpg";
 
 const allProducts = [
-  { name: "Rose Quartz Face Roller", price: "$24", desc: "Smooth away tension with natural rose quartz.", image: productRoller, category: "Body & Skincare" },
-  { name: "Healing Crystal Bracelet", price: "$10", desc: "A blend of calming stones for daily wear.", image: productBracelet, category: "Crystals" },
-  { name: "Crystal Pendant Necklace", price: "$8", desc: "Delicate crystal on a gold-filled chain.", image: productPendant, category: "Crystals" },
-  { name: "Citrine Crystal Water Bottle", price: "$75", desc: "Infuse your water with golden citrine energy.", image: productBottle, category: "Crystals" },
-  { name: "Goddess Body Oil", price: "$45", desc: "Nourishing botanical blend for radiant skin.", image: productOil, category: "Body & Skincare" },
-  { name: "Palo Santo Cleansing Sticks", price: "$5", desc: "Sustainably sourced palo santo for cleansing.", image: productPalo, category: "Ritual Tools" },
-  { name: "Abalone Smudging Shell", price: "$15", desc: "Natural iridescent shell for your rituals.", image: productShell, category: "Ritual Tools" },
-  { name: "Bamboo Bathroom Set", price: "$11", desc: "Eco-friendly bamboo accessories for your space.", image: productBamboo, category: "Bamboo" },
+  {
+    name: "Quartz Face Roller",
+    price: "$24",
+    desc: "Smooth away tension with natural rose quartz.",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5769.webp?v=1757188727&width=800",
+    url: "https://sacredrootshh.com/products/quartz-face-roller",
+    category: "Body & Skincare",
+  },
+  {
+    name: "Crystal Bracelet",
+    price: "$10",
+    desc: "A blend of calming stones for daily wear.",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5790.webp?v=1757199570&width=800",
+    url: "https://sacredrootshh.com/products/crystal-bracelet",
+    category: "Crystals",
+  },
+  {
+    name: "Mushroom Crystal Pendant",
+    price: "$8",
+    desc: "Polished crystal mushroom pendant necklace.",
+    image: "https://sacredrootshh.com/cdn/shop/files/FullSizeRender.jpg?v=1757187507&width=800",
+    url: "https://sacredrootshh.com/products/mushroom-natural-crystal-polishing-pendant-necklace-1-piece",
+    category: "Crystals",
+  },
+  {
+    name: "Citrine Crystal Water Bottle",
+    price: "$75",
+    desc: "Infuse your water with golden citrine energy.",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5741.png?v=1757176214&width=800",
+    url: "https://sacredrootshh.com/products/citrine-crystal-water-bottle",
+    category: "Crystals",
+  },
+  {
+    name: "Goddess Body Oil",
+    price: "$45",
+    desc: "Nourishing botanical blend for radiant skin.",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=800",
+    url: "https://sacredrootshh.com/products/opal-body",
+    category: "Body & Skincare",
+  },
+  {
+    name: "Palo Santo",
+    price: "$5",
+    desc: "Sustainably sourced palo santo cleansing sticks.",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5746.jpg?v=1757176829&width=800",
+    url: "https://sacredrootshh.com/products/palo-santo-1",
+    category: "Ritual Tools",
+  },
+  {
+    name: "Abalone Shell",
+    price: "$15",
+    desc: "Natural iridescent shell for your smudging rituals.",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5744.jpg?v=1757176557&width=800",
+    url: "https://sacredrootshh.com/products/abalone-shell",
+    category: "Ritual Tools",
+  },
+  {
+    name: "Bamboo Bathroom Set",
+    price: "$11",
+    desc: "Eco-friendly bamboo accessories for your space.",
+    image: "https://sacredrootshh.com/cdn/shop/files/C39F7D2E-7788-4FD7-87B9-450567DD2832.jpg?v=1757098385&width=800",
+    url: "https://sacredrootshh.com/products/bamboo-bathroom-accessories",
+    category: "Bamboo",
+  },
 ];
 
 const filters = ["All", "Crystals", "Body & Skincare", "Ritual Tools", "Bamboo"];
@@ -31,7 +79,6 @@ const Shop = () => {
 
   return (
     <div className="pt-[72px]">
-      {/* Hero */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-20 pb-12">
         <p className="eyebrow mb-4">Sacred Roots Collection</p>
         <h1 className="heading-hero">The Collection</h1>
@@ -40,7 +87,6 @@ const Shop = () => {
 
       <div className="section-divider max-w-7xl mx-auto" />
 
-      {/* Filters */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-8">
         <div className="flex flex-wrap gap-8">
           {filters.map((f) => (
@@ -59,12 +105,17 @@ const Shop = () => {
         </div>
       </div>
 
-      {/* Grid */}
       <FadeInSection className="max-w-7xl mx-auto px-6 lg:px-12 pb-28">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
           {filtered.map((p) => (
-            <div key={p.name} className="product-card group">
-              <div className="product-card-image aspect-[4/5] mb-5 rounded-sm overflow-hidden">
+            <a
+              key={p.name}
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="product-card group block"
+            >
+              <div className="product-card-image aspect-[4/5] mb-5 rounded-sm overflow-hidden bg-muted">
                 <img src={p.image} alt={p.name} className="w-full h-full object-cover" loading="lazy" width={800} height={1000} />
               </div>
               <div className="flex items-start justify-between gap-4">
@@ -74,9 +125,8 @@ const Shop = () => {
                 </div>
                 <span className="text-sm text-foreground font-medium whitespace-nowrap mt-1">{p.price}</span>
               </div>
-              {/* SHOPIFY_BUTTON_PLACEHOLDER */}
-              <button className="btn-outline text-[11px] mt-5 w-full py-2.5">Add to Cart</button>
-            </div>
+              <span className="btn-outline text-[11px] mt-5 w-full py-2.5 block text-center">Shop Now</span>
+            </a>
           ))}
         </div>
       </FadeInSection>
