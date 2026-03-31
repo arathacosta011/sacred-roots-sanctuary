@@ -1,6 +1,6 @@
 import FadeInSection from "@/components/FadeInSection";
 import beefTallowImg from "@/assets/product-beef-tallow.png";
-import faceTallowImg from "@/assets/product-face-tallow.png";
+
 import mushroomImg from "@/assets/product-mushroom-nootropic.png";
 import soapImg from "@/assets/product-soap.png";
 
@@ -10,13 +10,6 @@ const products = [
     price: "$32",
     tag: "Bestseller",
     image: beefTallowImg,
-    url: "https://sacredrootshh.com/collections/all",
-  },
-  {
-    name: "Face Tallow",
-    price: "$28",
-    tag: "Skincare",
-    image: faceTallowImg,
     url: "https://sacredrootshh.com/collections/all",
   },
   {

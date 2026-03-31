@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FadeInSection from "@/components/FadeInSection";
 import beefTallowImg from "@/assets/product-beef-tallow.png";
-import faceTallowImg from "@/assets/product-face-tallow.png";
+
 import mushroomImg from "@/assets/product-mushroom-nootropic.png";
 import soapImg from "@/assets/product-soap.png";
 import lipBalmImg from "@/assets/product-tallow-lip-balm.png";
@@ -14,14 +14,6 @@ const allProducts = [
     image: beefTallowImg,
     url: "https://sacredrootshh.com/collections/all",
     category: "Beef Tallow",
-  },
-  {
-    name: "Face Tallow",
-    price: "$28",
-    desc: "Whipped beef tallow face cream for radiant skin.",
-    image: faceTallowImg,
-    url: "https://sacredrootshh.com/collections/all",
-    category: "Face Tallow",
   },
   {
     name: "Tallow Lip Balm",
@@ -49,7 +41,7 @@ const allProducts = [
   },
 ];
 
-const filters = ["All", "Beef Tallow", "Face Tallow", "Mushroom Nootropics", "Soaps"];
+const filters = ["All", "Beef Tallow", "Mushroom Nootropics", "Soaps"];
 
 const Shop = () => {
   const [activeFilter, setActiveFilter] = useState("All");
