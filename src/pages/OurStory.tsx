@@ -1,7 +1,8 @@
 import { Instagram, ArrowRight } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
-import storyCoastal from "@/assets/story-coastal.jpg";
-import lifestyleFounder from "@/assets/lifestyle-founder.jpg";
+
+const STORE_HERO = "https://sacredrootshh.com/cdn/shop/files/holistic-wellness.png?v=1756926464&width=1920";
+const INSTAGRAM_URL = "https://www.instagram.com/sacredroots.hh/";
 
 const values = [
   {
@@ -20,11 +21,11 @@ const values = [
 
 const OurStory = () => (
   <div className="pt-[72px]">
-    {/* Hero image */}
+    {/* Hero image — real brand image from Shopify store */}
     <div className="w-full h-[45vh] md:h-[55vh] overflow-hidden relative">
       <img
-        src={storyCoastal}
-        alt="Aerial view of La Jolla Cove coastline with turquoise Pacific water"
+        src={STORE_HERO}
+        alt="Sacred Roots holistic wellness products — crystals, sage, and essential oils"
         className="w-full h-full object-cover"
         width={1920}
         height={900}
@@ -46,8 +47,8 @@ const OurStory = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         <div>
           <img
-            src={lifestyleFounder}
-            alt="Founder walking on La Jolla beach with crystals at golden hour"
+            src="https://sacredrootshh.com/cdn/shop/files/IMG-5744.jpg?v=1757176557&width=960"
+            alt="Abalone shell — one of our signature ritual tools"
             className="w-full h-[500px] md:h-[650px] object-cover rounded-sm"
             loading="lazy"
             width={960}
@@ -68,7 +69,7 @@ const OurStory = () => (
             Today, every product in our collection is chosen with the same intention that started this journey: to help you reconnect with yourself, with nature, and with the quiet power that lives within you.
           </p>
           <a
-            href="https://www.instagram.com/sacredroots.hh/"
+            href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"

@@ -13,7 +13,7 @@ const allProducts = [
   {
     name: "Crystal Bracelet",
     price: "$10",
-    desc: "A blend of calming stones for daily wear.",
+    desc: "Rose Quartz, Amethyst, Obsidian, Tigers Eye & more.",
     image: "https://sacredrootshh.com/cdn/shop/files/IMG-5790.webp?v=1757199570&width=800",
     url: "https://sacredrootshh.com/products/crystal-bracelet",
     category: "Crystals",
@@ -35,12 +35,28 @@ const allProducts = [
     category: "Crystals",
   },
   {
-    name: "Goddess Body Oil",
+    name: "Selenite Lamp",
+    price: "$95",
+    desc: "Warm, calming selenite tower lamp for your space.",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=800",
+    url: "https://sacredrootshh.com/products/salentine-lamp",
+    category: "Crystals",
+  },
+  {
+    name: "Goddess Body (Opalite)",
     price: "$45",
-    desc: "Nourishing botanical blend for radiant skin.",
+    desc: "Opalite goddess body carving, self-standing.",
     image: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=800",
     url: "https://sacredrootshh.com/products/opal-body",
-    category: "Body & Skincare",
+    category: "Crystals",
+  },
+  {
+    name: "Smudge Kit",
+    price: "$28",
+    desc: "White sage, palo santo, and crystal cleansing set.",
+    image: "https://sacredrootshh.com/cdn/shop/files/white-sage-palo-santo-with-crystal-set-671027_2400x_3cbd7046-72b0-4c7e-be7f-936681fbf242.webp?v=1757178026&width=800",
+    url: "https://sacredrootshh.com/products/palo-santo",
+    category: "Ritual Tools",
   },
   {
     name: "Palo Santo",
@@ -48,6 +64,14 @@ const allProducts = [
     desc: "Sustainably sourced palo santo cleansing sticks.",
     image: "https://sacredrootshh.com/cdn/shop/files/IMG-5746.jpg?v=1757176829&width=800",
     url: "https://sacredrootshh.com/products/palo-santo-1",
+    category: "Ritual Tools",
+  },
+  {
+    name: "White Sage",
+    price: "$5",
+    desc: "Traditional white sage bundle for space clearing.",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5748.webp?v=1757177405&width=800",
+    url: "https://sacredrootshh.com/products/white-sage",
     category: "Ritual Tools",
   },
   {
@@ -64,11 +88,11 @@ const allProducts = [
     desc: "Eco-friendly bamboo accessories for your space.",
     image: "https://sacredrootshh.com/cdn/shop/files/C39F7D2E-7788-4FD7-87B9-450567DD2832.jpg?v=1757098385&width=800",
     url: "https://sacredrootshh.com/products/bamboo-bathroom-accessories",
-    category: "Bamboo",
+    category: "Home",
   },
 ];
 
-const filters = ["All", "Crystals", "Body & Skincare", "Ritual Tools", "Bamboo"];
+const filters = ["All", "Crystals", "Body & Skincare", "Ritual Tools", "Home"];
 
 const Shop = () => {
   const [activeFilter, setActiveFilter] = useState("All");

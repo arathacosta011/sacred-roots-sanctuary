@@ -16,18 +16,18 @@ const products = [
     url: "https://sacredrootshh.com/products/crystal-bracelet",
   },
   {
-    name: "Citrine Crystal Water Bottle",
-    price: "$75",
-    tag: "Premium",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5741.png?v=1757176214&width=800",
-    url: "https://sacredrootshh.com/products/citrine-crystal-water-bottle",
+    name: "Smudge Kit",
+    price: "$28",
+    tag: "Ritual",
+    image: "https://sacredrootshh.com/cdn/shop/files/white-sage-palo-santo-with-crystal-set-671027_2400x_3cbd7046-72b0-4c7e-be7f-936681fbf242.webp?v=1757178026&width=800",
+    url: "https://sacredrootshh.com/products/palo-santo",
   },
   {
-    name: "Goddess Body Oil",
-    price: "$45",
-    tag: "Ritual",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=800",
-    url: "https://sacredrootshh.com/products/opal-body",
+    name: "Selenite Lamp",
+    price: "$95",
+    tag: "Premium",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=800",
+    url: "https://sacredrootshh.com/products/salentine-lamp",
   },
 ];
 
