@@ -16,14 +16,6 @@ const allProducts = [
     category: "Beef Tallow",
   },
   {
-    name: "Face Tallow",
-    price: "$28",
-    desc: "Whipped beef tallow face cream for radiant skin.",
-    image: faceTallowImg,
-    url: "https://sacredrootshh.com/collections/all",
-    category: "Face Tallow",
-  },
-  {
     name: "Tallow Lip Balm",
     price: "$12",
     desc: "Organic tallow lip balm in bamboo packaging.",
