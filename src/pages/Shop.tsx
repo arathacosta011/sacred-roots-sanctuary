@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FadeInSection from "@/components/FadeInSection";
 import beefTallowImg from "@/assets/product-beef-tallow.png";
-import faceTallowImg from "@/assets/product-face-tallow.png";
+
 import mushroomImg from "@/assets/product-mushroom-nootropic.png";
 import soapImg from "@/assets/product-soap.png";
 import lipBalmImg from "@/assets/product-tallow-lip-balm.png";
