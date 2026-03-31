@@ -1,33 +1,37 @@
 import FadeInSection from "@/components/FadeInSection";
+import beefTallowImg from "@/assets/product-beef-tallow.png";
+import faceTallowImg from "@/assets/product-face-tallow.png";
+import mushroomImg from "@/assets/product-mushroom-nootropic.png";
+import soapImg from "@/assets/product-soap.png";
 
 const products = [
   {
-    name: "Quartz Face Roller",
-    price: "$24",
+    name: "Raw Beef Tallow",
+    price: "$32",
     tag: "Bestseller",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5769.webp?v=1757188727&width=1946",
-    url: "https://sacredrootshh.com/products/quartz-face-roller",
+    image: beefTallowImg,
+    url: "https://sacredrootshh.com/collections/all",
   },
   {
-    name: "Crystal Bracelet",
-    price: "$10",
-    tag: "New",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5790.webp?v=1757199570&width=1946",
-    url: "https://sacredrootshh.com/products/crystal-bracelet",
-  },
-  {
-    name: "Smudge Kit",
+    name: "Face Tallow",
     price: "$28",
-    tag: "Ritual",
-    image: "https://sacredrootshh.com/cdn/shop/files/white-sage-palo-santo-with-crystal-set-671027_2400x_3cbd7046-72b0-4c7e-be7f-936681fbf242.webp?v=1757178026&width=1946",
-    url: "https://sacredrootshh.com/products/palo-santo",
+    tag: "Skincare",
+    image: faceTallowImg,
+    url: "https://sacredrootshh.com/collections/all",
   },
   {
-    name: "Selenite Lamp",
-    price: "$95",
-    tag: "Premium",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=1946",
-    url: "https://sacredrootshh.com/products/salentine-lamp",
+    name: "Sacred Mycelium",
+    price: "$45",
+    tag: "Nootropic",
+    image: mushroomImg,
+    url: "https://sacredrootshh.com/collections/all",
+  },
+  {
+    name: "Botanical Soap",
+    price: "$14",
+    tag: "Handmade",
+    image: soapImg,
+    url: "https://sacredrootshh.com/collections/all",
   },
 ];
 
@@ -56,8 +60,15 @@ const FeaturedProducts = () => (
           rel="noopener noreferrer"
           className="product-card group block"
         >
-          <div className="product-card-image aspect-[4/5] mb-5 rounded-sm overflow-hidden relative bg-muted">
-            <img src={p.image} alt={p.name} className="w-full h-full object-cover" loading="lazy" width={1200} height={1500} />
+          <div className="product-card-image aspect-square mb-5 rounded-sm overflow-hidden relative bg-muted/30 flex items-center justify-center p-6">
+            <img
+              src={p.image}
+              alt={p.name}
+              className="max-w-full max-h-full object-contain drop-shadow-md"
+              loading="lazy"
+              width={1024}
+              height={1024}
+            />
             <span className="absolute top-4 left-4 eyebrow text-[9px] bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full">
               {p.tag}
             </span>
