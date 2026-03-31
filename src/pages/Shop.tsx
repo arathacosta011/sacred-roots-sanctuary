@@ -1,98 +1,55 @@
 import { useState } from "react";
 import FadeInSection from "@/components/FadeInSection";
+import beefTallowImg from "@/assets/product-beef-tallow.png";
+import faceTallowImg from "@/assets/product-face-tallow.png";
+import mushroomImg from "@/assets/product-mushroom-nootropic.png";
+import soapImg from "@/assets/product-soap.png";
+import lipBalmImg from "@/assets/product-tallow-lip-balm.png";
 
 const allProducts = [
   {
-    name: "Quartz Face Roller",
-    price: "$24",
-    desc: "Smooth away tension with natural rose quartz.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5769.webp?v=1757188727&width=1946",
-    url: "https://sacredrootshh.com/products/quartz-face-roller",
-    category: "Body & Skincare",
+    name: "Raw Beef Tallow",
+    price: "$32",
+    desc: "Pure grass-fed beef tallow for deep hydration.",
+    image: beefTallowImg,
+    url: "https://sacredrootshh.com/collections/all",
+    category: "Beef Tallow",
   },
   {
-    name: "Crystal Bracelet",
-    price: "$10",
-    desc: "Rose Quartz, Amethyst, Obsidian, Tigers Eye & more.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5790.webp?v=1757199570&width=1946",
-    url: "https://sacredrootshh.com/products/crystal-bracelet",
-    category: "Crystals",
-  },
-  {
-    name: "Mushroom Crystal Pendant",
-    price: "$8",
-    desc: "Polished crystal mushroom pendant necklace.",
-    image: "https://sacredrootshh.com/cdn/shop/files/FullSizeRender.jpg?v=1757187507&width=1946",
-    url: "https://sacredrootshh.com/products/mushroom-natural-crystal-polishing-pendant-necklace-1-piece",
-    category: "Crystals",
-  },
-  {
-    name: "Citrine Crystal Water Bottle",
-    price: "$75",
-    desc: "Infuse your water with golden citrine energy.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5743.webp?v=1757176366&width=1946",
-    url: "https://sacredrootshh.com/products/citrine-crystal-water-bottle",
-    category: "Crystals",
-  },
-  {
-    name: "Selenite Lamp",
-    price: "$95",
-    desc: "Warm, calming selenite tower lamp for your space.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=1946",
-    url: "https://sacredrootshh.com/products/salentine-lamp",
-    category: "Crystals",
-  },
-  {
-    name: "Goddess Body (Opalite)",
-    price: "$45",
-    desc: "Opalite goddess body carving, self-standing.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=1946",
-    url: "https://sacredrootshh.com/products/opal-body",
-    category: "Crystals",
-  },
-  {
-    name: "Smudge Kit",
+    name: "Face Tallow",
     price: "$28",
-    desc: "White sage, palo santo, and crystal cleansing set.",
-    image: "https://sacredrootshh.com/cdn/shop/files/white-sage-palo-santo-with-crystal-set-671027_2400x_3cbd7046-72b0-4c7e-be7f-936681fbf242.webp?v=1757178026&width=1946",
-    url: "https://sacredrootshh.com/products/palo-santo",
-    category: "Ritual Tools",
+    desc: "Whipped beef tallow face cream for radiant skin.",
+    image: faceTallowImg,
+    url: "https://sacredrootshh.com/collections/all",
+    category: "Face Tallow",
   },
   {
-    name: "Palo Santo",
-    price: "$5",
-    desc: "Sustainably sourced palo santo cleansing sticks.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5746.jpg?v=1757176829&width=1946",
-    url: "https://sacredrootshh.com/products/palo-santo-1",
-    category: "Ritual Tools",
+    name: "Tallow Lip Balm",
+    price: "$12",
+    desc: "Organic tallow lip balm in bamboo packaging.",
+    image: lipBalmImg,
+    url: "https://sacredrootshh.com/collections/all",
+    category: "Beef Tallow",
   },
   {
-    name: "White Sage",
-    price: "$5",
-    desc: "Traditional white sage bundle for space clearing.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5748.webp?v=1757177405&width=1946",
-    url: "https://sacredrootshh.com/products/white-sage",
-    category: "Ritual Tools",
+    name: "Sacred Mycelium Tincture",
+    price: "$45",
+    desc: "Mushroom nootropic blend for focus and clarity.",
+    image: mushroomImg,
+    url: "https://sacredrootshh.com/collections/all",
+    category: "Mushroom Nootropics",
   },
   {
-    name: "Abalone Shell",
-    price: "$15",
-    desc: "Natural iridescent shell for your smudging rituals.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5744.jpg?v=1757176557&width=1946",
-    url: "https://sacredrootshh.com/products/abalone-shell",
-    category: "Ritual Tools",
-  },
-  {
-    name: "Bamboo Bathroom Set",
-    price: "$11",
-    desc: "Eco-friendly bamboo accessories for your space.",
-    image: "https://sacredrootshh.com/cdn/shop/files/C39F7D2E-7788-4FD7-87B9-450567DD2832.jpg?v=1757098385&width=1946",
-    url: "https://sacredrootshh.com/products/bamboo-bathroom-accessories",
-    category: "Home",
+    name: "Botanical Soap",
+    price: "$14",
+    desc: "Handmade organic soap with botanicals and herbs.",
+    image: soapImg,
+    url: "https://sacredrootshh.com/collections/all",
+    category: "Soaps",
   },
 ];
 
-const filters = ["All", "Crystals", "Body & Skincare", "Ritual Tools", "Home"];
+const filters = ["All", "Beef Tallow", "Face Tallow", "Mushroom Nootropics", "Soaps"];
 
 const Shop = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -139,8 +96,15 @@ const Shop = () => {
               rel="noopener noreferrer"
               className="product-card group block"
             >
-              <div className="product-card-image aspect-[4/5] mb-5 rounded-sm overflow-hidden bg-muted">
-                <img src={p.image} alt={p.name} className="w-full h-full object-cover" loading="lazy" width={1200} height={1500} />
+              <div className="product-card-image aspect-square mb-5 rounded-sm overflow-hidden bg-muted/30 flex items-center justify-center p-8">
+                <img
+                  src={p.image}
+                  alt={p.name}
+                  className="max-w-full max-h-full object-contain drop-shadow-md"
+                  loading="lazy"
+                  width={1024}
+                  height={1024}
+                />
               </div>
               <div className="flex items-start justify-between gap-4">
                 <div>
