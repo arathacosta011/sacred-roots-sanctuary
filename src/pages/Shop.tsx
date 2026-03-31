@@ -30,7 +30,7 @@ const allProducts = [
     name: "Citrine Crystal Water Bottle",
     price: "$75",
     desc: "Infuse your water with golden citrine energy.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5741.png?v=1757176214&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5743.webp?v=1757176366&width=1946",
     url: "https://sacredrootshh.com/products/citrine-crystal-water-bottle",
     category: "Crystals",
   },
