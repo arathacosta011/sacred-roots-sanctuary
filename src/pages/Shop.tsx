@@ -78,7 +78,7 @@ const allProducts = [
     name: "Abalone Shell",
     price: "$15",
     desc: "Natural iridescent shell for your smudging rituals.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5745.jpg?v=1757176557&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5744.jpg?v=1757176557&width=1946",
     url: "https://sacredrootshh.com/products/abalone-shell",
     category: "Ritual Tools",
   },
