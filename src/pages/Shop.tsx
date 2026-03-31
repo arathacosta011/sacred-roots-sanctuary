@@ -70,7 +70,7 @@ const allProducts = [
     name: "White Sage",
     price: "$5",
     desc: "Traditional white sage bundle for space clearing.",
-    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5748.webp?v=1757177405&width=1200",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5748.webp?v=1757177405&width=1946",
     url: "https://sacredrootshh.com/products/white-sage",
     category: "Ritual Tools",
   },
