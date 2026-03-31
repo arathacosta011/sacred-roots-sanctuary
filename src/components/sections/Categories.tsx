@@ -1,12 +1,21 @@
 import FadeInSection from "@/components/FadeInSection";
-import handsCrystals from "@/assets/hands-crystals.jpg";
-import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
-import homeSanctuary from "@/assets/home-sanctuary.jpg";
 
 const categories = [
-  { name: "Crystals & Gemstones", image: handsCrystals, url: "https://sacredrootshh.com/collections/all" },
-  { name: "Body & Ritual", image: ritualFlatlay, url: "https://sacredrootshh.com/collections/all" },
-  { name: "Home & Sacred Space", image: homeSanctuary, url: "https://sacredrootshh.com/collections/all" },
+  {
+    name: "Crystals & Gemstones",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5797.webp?v=1757200231&width=800",
+    url: "https://sacredrootshh.com/collections/all",
+  },
+  {
+    name: "Body & Ritual",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=800",
+    url: "https://sacredrootshh.com/collections/all",
+  },
+  {
+    name: "Home & Sacred Space",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=800",
+    url: "https://sacredrootshh.com/collections/all",
+  },
 ];
 
 const Categories = () => (

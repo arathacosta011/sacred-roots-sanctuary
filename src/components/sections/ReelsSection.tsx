@@ -1,38 +1,34 @@
 import { Play, Instagram } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
-import instaRitual from "@/assets/insta-ritual.jpg";
-import instaBracelets from "@/assets/insta-bracelets.jpg";
-import instaMorning from "@/assets/insta-morning.jpg";
-import instaAmethyst from "@/assets/insta-amethyst.jpg";
+
+const INSTAGRAM_URL = "https://www.instagram.com/sacredroots.hh/";
 
 const reels = [
   {
     title: "Crystal Cleansing Ritual",
     desc: "How to cleanse and charge your crystals",
-    image: instaRitual,
-    url: "https://www.instagram.com/sacredroots.hh/reels/",
+    image: "https://sacredrootshh.com/cdn/shop/files/white-sage-palo-santo-with-crystal-set-671027_2400x_3cbd7046-72b0-4c7e-be7f-936681fbf242.webp?v=1757178026&width=800",
+    url: INSTAGRAM_URL + "reels/",
   },
   {
     title: "Bracelet Stacking Guide",
     desc: "Our favourite crystal bracelet combos",
-    image: instaBracelets,
-    url: "https://www.instagram.com/sacredroots.hh/reels/",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5794.webp?v=1757200232&width=800",
+    url: INSTAGRAM_URL + "reels/",
   },
   {
-    title: "Morning Wellness Ritual",
-    desc: "Start your day with intention",
-    image: instaMorning,
-    url: "https://www.instagram.com/sacredroots.hh/reels/",
+    title: "Palo Santo Ritual",
+    desc: "How to smudge your space with palo santo",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5746.jpg?v=1757176829&width=800",
+    url: INSTAGRAM_URL + "reels/",
   },
   {
-    title: "Amethyst Energy Guide",
-    desc: "The healing power of amethyst",
-    image: instaAmethyst,
-    url: "https://www.instagram.com/sacredroots.hh/reels/",
+    title: "Selenite Energy Guide",
+    desc: "The healing power of selenite",
+    image: "https://sacredrootshh.com/cdn/shop/files/IMG-5770.webp?v=1757188827&width=800",
+    url: INSTAGRAM_URL + "reels/",
   },
 ];
-
-const INSTAGRAM_URL = "https://www.instagram.com/sacredroots.hh/";
 
 const ReelsSection = () => (
   <FadeInSection className="py-20 md:py-28">
@@ -40,7 +36,7 @@ const ReelsSection = () => (
       <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14">
         <div>
           <p className="eyebrow mb-4">Watch & Learn</p>
-          <h2 className="heading-section">See It in Practice</h2>
+          <h2 className="heading-section">Rituals, Remedies<br className="hidden md:block" /> & Real Moments</h2>
         </div>
         <a
           href={INSTAGRAM_URL}
@@ -66,19 +62,17 @@ const ReelsSection = () => (
               alt={reel.title}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               loading="lazy"
-              width={640}
-              height={640}
+              width={800}
+              height={1000}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-foreground/10 to-transparent" />
 
-            {/* Play icon */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-12 h-12 rounded-full bg-background/30 backdrop-blur-sm flex items-center justify-center opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
                 <Play size={18} className="text-background ml-0.5" fill="currentColor" />
               </div>
             </div>
 
-            {/* Text */}
             <div className="absolute bottom-0 left-0 right-0 p-5">
               <p className="text-[13px] font-medium text-background/90 mb-1">{reel.title}</p>
               <p className="text-[11px] text-background/60">{reel.desc}</p>

@@ -1,22 +1,16 @@
 import { Instagram, ArrowRight } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
-import instaRitual from "@/assets/insta-ritual.jpg";
-import instaBracelets from "@/assets/insta-bracelets.jpg";
-import instaMorning from "@/assets/insta-morning.jpg";
-import instaAmethyst from "@/assets/insta-amethyst.jpg";
-import handsCrystals from "@/assets/hands-crystals.jpg";
-import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
-
-const images = [
-  { src: instaRitual, alt: "Beach sunset crystal ritual" },
-  { src: instaBracelets, alt: "Crystal bracelets at the ocean" },
-  { src: instaMorning, alt: "Morning wellness ritual flatlay" },
-  { src: instaAmethyst, alt: "Amethyst geode on wooden shelf" },
-  { src: handsCrystals, alt: "Hands holding healing crystals on beach" },
-  { src: ritualFlatlay, alt: "Crystal healing ritual setup" },
-];
 
 const INSTAGRAM_URL = "https://www.instagram.com/sacredroots.hh/";
+
+const images = [
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5744.jpg?v=1757176557&width=640", alt: "Abalone Shell" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5790.webp?v=1757199570&width=640", alt: "Crystal Bracelets" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5799.jpg?v=1757201789&width=640", alt: "Goddess Body Opalite" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5769.webp?v=1757188727&width=640", alt: "Quartz Face Roller" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/IMG-5748.webp?v=1757177405&width=640", alt: "White Sage" },
+  { src: "https://sacredrootshh.com/cdn/shop/files/FullSizeRender.jpg?v=1757187507&width=640", alt: "Mushroom Crystal Pendant" },
+];
 
 const InstagramSection = () => (
   <FadeInSection className="py-20 md:py-28 border-t border-border/40">
@@ -40,7 +34,7 @@ const InstagramSection = () => (
           href={INSTAGRAM_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="aspect-square overflow-hidden group relative"
+          className="aspect-square overflow-hidden group relative bg-muted"
         >
           <img
             src={img.src}

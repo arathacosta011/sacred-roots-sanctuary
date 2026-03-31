@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, ChevronDown } from "lucide-react";
-import heroImage from "@/assets/hero-coastal.jpg";
+
+const HERO_IMAGE = "https://sacredrootshh.com/cdn/shop/files/holistic-wellness.png?v=1756926464&width=3840";
 
 const HeroSection = () => (
   <section className="min-h-screen flex items-center relative overflow-hidden">
     <div className="absolute inset-0">
       <img
-        src={heroImage}
-        alt="Sacred Roots wellness flatlay with rose quartz, palo santo, lavender and sage"
+        src={HERO_IMAGE}
+        alt="Sacred Roots Holistic Healing — crystals, sage, and essential oils"
         className="w-full h-full object-cover"
         width={1920}
         height={1280}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/30" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/65 to-transparent" />
     </div>
 
     <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 pt-20">

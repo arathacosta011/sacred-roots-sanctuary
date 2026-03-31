@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
-import lifestyleFounder from "@/assets/lifestyle-founder.jpg";
+
+const FOUNDER_IMAGE = "https://sacredrootshh.com/cdn/shop/files/holistic-wellness.png?v=1756926464&width=1200";
 
 const BrandPhilosophy = () => (
   <FadeInSection>
@@ -9,8 +10,8 @@ const BrandPhilosophy = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div className="relative">
           <img
-            src={lifestyleFounder}
-            alt="Founder with crystals at golden hour on the La Jolla coastline"
+            src={FOUNDER_IMAGE}
+            alt="Sacred Roots holistic wellness products — crystals, sage, and essential oils"
             className="w-full h-[500px] md:h-[650px] object-cover rounded-sm"
             loading="lazy"
             width={960}
