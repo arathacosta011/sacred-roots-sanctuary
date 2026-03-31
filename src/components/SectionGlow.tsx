@@ -3,7 +3,7 @@ interface Orb {
   size: number;
   blur: number;
   opacity: number;
-  position: string; // Tailwind position classes e.g. "top-0 left-0"
+  position: string;
 }
 
 interface SectionGlowProps {
@@ -17,13 +17,14 @@ const SectionGlow = ({ orbs, children, className = "" }: SectionGlowProps) => (
     {orbs.map((orb, i) => (
       <div
         key={i}
-        className={`glow-orb ${orb.position}`}
+        className={`glow-orb ${orb.position} animate-orb-pulse`}
         style={{
           width: orb.size,
           height: orb.size,
-          background: orb.color,
+          background: `radial-gradient(circle, ${orb.color} 0%, transparent 70%)`,
           filter: `blur(${orb.blur}px)`,
           opacity: orb.opacity,
+          animationDelay: `${i * 2}s`,
         }}
       />
     ))}

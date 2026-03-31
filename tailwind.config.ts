@@ -88,12 +88,17 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        "orb-pulse": {
+          "0%, 100%": { transform: "scale(1)", opacity: "var(--tw-opacity, 1)" },
+          "50%": { transform: "scale(1.15)", opacity: "calc(var(--tw-opacity, 1) * 0.7)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.8s ease-out forwards",
         "fade-in-slow": "fade-in-slow 1.2s ease-out forwards",
+        "orb-pulse": "orb-pulse 8s ease-in-out infinite",
       },
     },
   },
