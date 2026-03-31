@@ -1,24 +1,13 @@
-import { useEffect } from "react";
 import { Instagram } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
 
-const reelUrls = [
-  "https://www.instagram.com/reel/DTivbfzEoQK/",
-  "https://www.instagram.com/reel/DTV-lFxkvnG/",
-  "https://www.instagram.com/reel/DQzrGPjEjOW/",
+const reels = [
+  { url: "https://www.instagram.com/reel/DTivbfzEoQK/", id: "DTivbfzEoQK" },
+  { url: "https://www.instagram.com/reel/DTV-lFxkvnG/", id: "DTV-lFxkvnG" },
+  { url: "https://www.instagram.com/reel/DQzrGPjEjOW/", id: "DQzrGPjEjOW" },
 ];
 
 const FounderReels = () => {
-  useEffect(() => {
-    const s = document.createElement("script");
-    s.src = "https://www.instagram.com/embed.js";
-    s.async = true;
-    document.body.appendChild(s);
-    return () => {
-      document.body.removeChild(s);
-    };
-  }, []);
-
   return (
     <FadeInSection className="py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -40,14 +29,18 @@ const FounderReels = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {reelUrls.map((url) => (
-            <blockquote
-              key={url}
-              className="instagram-media"
-              data-instgrm-permalink={url}
-              data-instgrm-version="14"
-              style={{ width: "100%", maxWidth: 420, margin: 0, minHeight: 480 }}
-            />
+          {reels.map((reel) => (
+            <div key={reel.id} className="rounded-sm overflow-hidden bg-muted">
+              <iframe
+                src={`https://www.instagram.com/reel/${reel.id}/embed/`}
+                className="w-full border-0"
+                style={{ minHeight: 520 }}
+                allowTransparency
+                allow="encrypted-media"
+                loading="lazy"
+                title={`Instagram reel ${reel.id}`}
+              />
+            </div>
           ))}
         </div>
       </div>
