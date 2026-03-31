@@ -83,3 +83,5 @@ const FounderReels = () => (
     </div>
   </FadeInSection>
 );
+
+export default FounderReels;
