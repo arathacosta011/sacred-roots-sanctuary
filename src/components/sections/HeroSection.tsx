@@ -1,21 +1,19 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, ChevronDown } from "lucide-react";
 
-const HERO_IMAGE = "https://sacredrootshh.com/cdn/shop/files/holistic-wellness.png?v=1756926464&width=3840";
 const HERO_VIDEO = "/videos/hero-bg.mp4";
 
 const HeroSection = () => (
-  <section className="min-h-screen flex items-center relative overflow-hidden">
+  <section className="min-h-screen flex items-center relative overflow-hidden bg-black">
     {/* Video background */}
     <video
       className="absolute inset-0 w-full h-full object-cover"
       src={HERO_VIDEO}
-      poster={HERO_IMAGE}
       autoPlay
       loop
       muted
       playsInline
-      preload="none"
+      preload="auto"
       style={{ pointerEvents: "none" }}
     />
 
