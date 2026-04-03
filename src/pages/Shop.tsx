@@ -16,12 +16,12 @@ const allProducts = [
 const filters = ["All", "Beef Tallow", "Mushroom Nootropics", "Soaps"];
 
 const headerOrbs = [
-  { color: "#C4886A", size: 400, blur: 90, opacity: 0.15, position: "top-[-80px] right-[-80px]" },
-  { color: "#7D9B7A", size: 350, blur: 80, opacity: 0.12, position: "bottom-[-60px] left-[-60px]" },
+  { color: "#C9B99A", size: 400, blur: 90, opacity: 0.15, position: "top-[-80px] right-[-80px]" },
+  { color: "#D4C4A8", size: 350, blur: 80, opacity: 0.12, position: "bottom-[-60px] left-[-60px]" },
 ];
 
 const gridOrbs = [
-  { color: "#7D9B7A", size: 450, blur: 90, opacity: 0.15, position: "top-[-80px] left-[-80px]" },
+  { color: "#D4C4A8", size: 450, blur: 90, opacity: 0.15, position: "top-[-80px] left-[-80px]" },
   { color: "#D4A96A", size: 350, blur: 80, opacity: 0.12, position: "bottom-[-60px] right-[-60px]" },
 ];
 
