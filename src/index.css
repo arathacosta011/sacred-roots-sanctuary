@@ -41,12 +41,12 @@
 
     --sidebar-background: 40 33% 96%;
     --sidebar-foreground: 30 8% 18%;
-    --sidebar-primary: 150 12% 42%;
+    --sidebar-primary: 30 25% 45%;
     --sidebar-primary-foreground: 40 33% 98%;
     --sidebar-accent: 36 18% 91%;
     --sidebar-accent-foreground: 30 8% 18%;
     --sidebar-border: 36 18% 91%;
-    --sidebar-ring: 150 12% 42%;
+    --sidebar-ring: 30 25% 45%;
 
     --font-heading: 'Cormorant Garamond', serif;
     --font-body: 'DM Sans', sans-serif;
