@@ -9,13 +9,13 @@ import Testimonials from "@/components/sections/Testimonials";
 import SectionGlow from "@/components/SectionGlow";
 
 const heroOrbs = [
-  { color: "#C4886A", size: 500, blur: 100, opacity: 0.18, position: "top-[-100px] left-[-100px]" },
-  { color: "#7D9B7A", size: 450, blur: 90, opacity: 0.15, position: "bottom-[-80px] right-[-80px]" },
+  { color: "#C9B99A", size: 500, blur: 100, opacity: 0.18, position: "top-[-100px] left-[-100px]" },
+  { color: "#D4C4A8", size: 450, blur: 90, opacity: 0.15, position: "bottom-[-80px] right-[-80px]" },
 ];
 
 const aboutOrbs = [
-  { color: "#7D9B7A", size: 450, blur: 90, opacity: 0.15, position: "top-[-80px] left-[-80px]" },
-  { color: "#C4886A", size: 500, blur: 100, opacity: 0.18, position: "bottom-[-100px] right-[-100px]" },
+  { color: "#D4C4A8", size: 450, blur: 90, opacity: 0.15, position: "top-[-80px] left-[-80px]" },
+  { color: "#C9B99A", size: 500, blur: 100, opacity: 0.18, position: "bottom-[-100px] right-[-100px]" },
 ];
 
 const emailOrbs = [
@@ -23,8 +23,8 @@ const emailOrbs = [
 ];
 
 const testimonialOrbs = [
-  { color: "#C4886A", size: 300, blur: 70, opacity: 0.1, position: "top-[-60px] left-[-60px]" },
-  { color: "#7D9B7A", size: 300, blur: 70, opacity: 0.1, position: "bottom-[-60px] right-[-60px]" },
+  { color: "#C9B99A", size: 300, blur: 70, opacity: 0.1, position: "top-[-60px] left-[-60px]" },
+  { color: "#D4C4A8", size: 300, blur: 70, opacity: 0.1, position: "bottom-[-60px] right-[-60px]" },
 ];
 
 const Index = () => (
