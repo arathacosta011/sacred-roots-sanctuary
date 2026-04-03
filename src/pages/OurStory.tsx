@@ -26,8 +26,8 @@ const heroOrbs = [
 ];
 
 const founderOrbs = [
-  { color: "#7D9B7A", size: 450, blur: 90, opacity: 0.15, position: "top-[-80px] left-[-80px]" },
-  { color: "#C4886A", size: 500, blur: 100, opacity: 0.18, position: "bottom-[-100px] right-[-100px]" },
+  { color: "#D4C4A8", size: 450, blur: 90, opacity: 0.15, position: "top-[-80px] left-[-80px]" },
+  { color: "#C9B99A", size: 500, blur: 100, opacity: 0.18, position: "bottom-[-100px] right-[-100px]" },
 ];
 
 const valuesOrbs = [
