@@ -8,7 +8,7 @@ const HeroSection = () => (
     {/* Video fills screen, full bottle visible */}
     <div className="h-screen w-full bg-black relative overflow-hidden">
       <video
-        className="absolute inset-0 h-full w-full object-cover scale-90"
+        className="absolute inset-0 h-full w-full object-cover md:scale-90"
         src={HERO_VIDEO}
         autoPlay
         loop
