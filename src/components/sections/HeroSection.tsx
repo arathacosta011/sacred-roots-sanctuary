@@ -6,7 +6,7 @@ const HERO_VIDEO = "/videos/hero-bg.mp4";
 const HeroSection = () => (
   <section className="relative overflow-hidden bg-black">
     {/* Video fills screen, full bottle visible */}
-    <div className="h-screen w-full bg-black">
+    <div className="h-screen w-full bg-black relative">
       <video
         className="w-full h-full object-cover md:object-contain"
         src={HERO_VIDEO}
@@ -17,6 +17,10 @@ const HeroSection = () => (
         preload="auto"
         style={{ pointerEvents: "none" }}
       />
+      {/* Edge vignette to blend video into black background */}
+      <div className="absolute inset-0 pointer-events-none" style={{
+        boxShadow: 'inset 0 0 150px 60px rgba(0,0,0,0.85)',
+      }} />
     </div>
 
     {/* Text content below the video */}
