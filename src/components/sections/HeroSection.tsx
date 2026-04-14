@@ -5,10 +5,10 @@ const HERO_VIDEO = "/videos/hero-bg.mp4";
 
 const HeroSection = () => (
   <section className="relative overflow-hidden bg-[#FDFBF7]">
-    {/* Video fills entire screen */}
+    {/* Video fills screen, full bottle visible */}
     <div className="h-screen w-full">
       <video
-        className="w-full h-full object-cover"
+        className="w-full h-full object-contain"
         src={HERO_VIDEO}
         autoPlay
         loop
