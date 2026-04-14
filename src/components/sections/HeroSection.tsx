@@ -4,9 +4,9 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 const HERO_VIDEO = "/videos/hero-bg.mp4";
 
 const HeroSection = () => (
-  <section className="relative overflow-hidden bg-[#FDFBF7]">
+  <section className="relative overflow-hidden bg-black">
     {/* Video fills screen, full bottle visible */}
-    <div className="h-screen w-full">
+    <div className="h-screen w-full bg-black">
       <video
         className="w-full h-full object-cover md:object-contain"
         src={HERO_VIDEO}
