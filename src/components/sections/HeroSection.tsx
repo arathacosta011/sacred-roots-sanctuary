@@ -6,9 +6,9 @@ const HERO_VIDEO = "/videos/hero-bg.mp4";
 const HeroSection = () => (
   <section className="relative overflow-hidden bg-black">
     {/* Video fills screen, full bottle visible */}
-    <div className="h-screen w-full bg-black relative">
+    <div className="h-screen w-full bg-black relative flex items-center justify-center">
       <video
-        className="w-full h-full object-cover md:object-contain"
+        className="w-full h-full object-contain"
         src={HERO_VIDEO}
         autoPlay
         loop
@@ -17,9 +17,9 @@ const HeroSection = () => (
         preload="auto"
         style={{ pointerEvents: "none" }}
       />
-      {/* Edge vignette to blend video into black background */}
+      {/* Soft edge vignette to blend video into black background */}
       <div className="absolute inset-0 pointer-events-none" style={{
-        boxShadow: 'inset 0 0 150px 60px rgba(0,0,0,0.85)',
+        boxShadow: 'inset 0 0 80px 30px rgba(0,0,0,0.6)',
       }} />
     </div>
 
