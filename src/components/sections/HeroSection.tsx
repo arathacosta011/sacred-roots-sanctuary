@@ -7,7 +7,7 @@ const HeroSection = () => (
   <section className="min-h-screen flex items-center relative overflow-hidden bg-black">
     {/* Video background */}
     <video
-      className="absolute inset-0 w-full h-full object-cover"
+      className="absolute inset-0 w-full h-full object-contain"
       src={HERO_VIDEO}
       autoPlay
       loop
