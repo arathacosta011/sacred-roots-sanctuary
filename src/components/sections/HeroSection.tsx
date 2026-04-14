@@ -6,9 +6,21 @@ const HERO_VIDEO = "/videos/hero-bg.mp4";
 const HeroSection = () => (
   <section className="relative overflow-hidden bg-black">
     {/* Video fills screen, full bottle visible */}
-    <div className="h-screen w-full bg-black relative flex items-center justify-center">
+    <div className="h-screen w-full bg-black relative overflow-hidden flex items-center justify-center">
       <video
-        className="w-full h-full object-contain"
+        className="absolute inset-0 h-full w-full object-cover scale-110 blur-2xl opacity-45"
+        src={HERO_VIDEO}
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        aria-hidden="true"
+        style={{ pointerEvents: "none" }}
+      />
+      <div className="absolute inset-0 bg-black/30" />
+      <video
+        className="relative z-10 h-full w-full object-contain"
         src={HERO_VIDEO}
         autoPlay
         loop
@@ -17,9 +29,8 @@ const HeroSection = () => (
         preload="auto"
         style={{ pointerEvents: "none" }}
       />
-      {/* Soft edge vignette to blend video into black background */}
       <div className="absolute inset-0 pointer-events-none" style={{
-        boxShadow: 'inset 0 0 80px 30px rgba(0,0,0,0.6)',
+        boxShadow: 'inset 0 0 90px 35px rgba(0,0,0,0.35)',
       }} />
     </div>
 
