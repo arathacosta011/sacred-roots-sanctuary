@@ -5,10 +5,10 @@ const HERO_VIDEO = "/videos/hero-bg.mp4";
 
 const HeroSection = () => (
   <section className="relative overflow-hidden bg-[#FDFBF7]">
-    {/* Video takes full viewport height */}
-    <div className="h-screen w-full flex items-center justify-center">
+    {/* Video fills full width, height adjusts naturally */}
+    <div className="w-full">
       <video
-        className="w-full h-full object-contain"
+        className="w-full h-auto block"
         src={HERO_VIDEO}
         autoPlay
         loop
@@ -41,7 +41,7 @@ const HeroSection = () => (
       </div>
     </div>
 
-    {/* Scroll indicator - positioned at bottom of video */}
+    {/* Scroll indicator */}
     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce text-foreground/50 z-20">
       <ChevronDown size={24} />
     </div>
