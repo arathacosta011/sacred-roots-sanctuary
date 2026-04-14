@@ -8,7 +8,7 @@ const HeroSection = () => (
     {/* Video fills screen, full bottle visible */}
     <div className="h-screen w-full">
       <video
-        className="w-full h-full object-contain"
+        className="w-full h-full object-cover md:object-contain"
         src={HERO_VIDEO}
         autoPlay
         loop
